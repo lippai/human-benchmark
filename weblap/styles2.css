@@ -1,0 +1,71 @@
+.nav-item:hover{
+    background-color: lightgrey;
+}
+
+.bi{
+    -webkit-animation: pulse 3s ease-in;
+    -moz-animation: pulse 3s ease-in;
+     animation: pulse 3s ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      opacity: 0.5;
+   }
+   25% {
+      -webkit-transform: scale(1.35);
+      opacity: 0.75;
+   }
+   50% {
+      -webkit-transform: scale(1.7);
+      opacity: 1.0;
+   }
+   75% {
+      -webkit-transform: scale(2.05);
+      opacity: 0.75;
+   }
+   100% {
+      -webkit-transform: scale(2.4);
+      opacity: 0.5;
+   }
+  }
+
+  .recent-scores {
+   display: flex;
+   flex-direction: row;
+   width: 500px; 
+   flex-shrink: 0;
+   position: absolute;
+}
+
+.score {
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 16px;
+}
+
+.score:nth-child(odd) {
+   background: #eee;
+}
+
+.click-area{
+   background-color: rgb(13, 186, 230);
+   cursor: pointer;
+   text-align: center;
+}
+
+.board{
+   display: flex;
+   justify-content: center;
+}
+
+.background{
+   background-color: rgb(13, 186, 230);  
+}

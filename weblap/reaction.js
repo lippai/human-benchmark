@@ -26,6 +26,9 @@ function play() {
     if(round > 3) {
         
         clickArea.style.backgroundColor = "#0099FF";
+        displayText.style.color = "white";
+        displayText.style.left = "550px";
+        displayText.style.top = "315px";
         displayText.textContent = "Your best score is " + best + " ms";
 
     }

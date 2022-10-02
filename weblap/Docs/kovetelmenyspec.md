@@ -14,6 +14,13 @@ Lippai Attila
 Kóródi Marcell
 
 
+3\. Jelenleg helyzet
+=====================
+Az ügyfél szeretné felmérni az alkalmazottainak az egyes képességeit. A legolcsóbb és legegyszerűbb mód erre az általunk készített weboldal amelyet bármikor, bárhonnan és teljesen ingyenesen igénybe
+vehet az ügyfél e célból. A különböző tesztek az alkalmazottak különböző képességeinek a felmérésére alkalmasak amelyeknek az elvégzése után könnyen össze lehet hasonlítani az átlag ember képességeivel
+a megszerzett pontszámok segítsége által. Ezekkel a tesztekkel így tehát a munkáltató meg tudja határozni, hogy egy bizonyos alkalmazott alkalmas e egy bizonyos munka elvégzésére vagy sem.
+
+
 3\. Vágyálom rendszer
 =====================
 Az elkészítendő rendszer célja hogy egy egyszerű, ingyenes, bárki számára bárhonnan elérhető lehetőséget nyújtsunk az egyes képpességeik tesztelésére.
@@ -37,6 +44,14 @@ A weboldalnak alkalmasnak kell lennie a folyamatos bővíthetőségre(új játé
 ======================
    
 A weboldalnak meg kell felelnie minden hatályos jogszabálynak, szabványnak és ajánlásnak. Az egyik legfontosabb ilyen irányelv az adatvédelem, aminek meg kell felelnie az éppen hatájos GDPR jogszabálynak. Hasonlóan fontos terület a személyes adatok gyűjtésére vonatkozó jogszabályok. Ezen a területen a programnak meg kell felelnie a”2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról” -ban leírtaknak. Mindazonáltal a programnak meg kell felelnie a fogyatékkal élők érdekében hozott hozzáférhetőségi szabályozásoknak.
+
+Szellemi tulajdon:
+	A törvény szerint az eredeti számítógépes program az azt létrehozó személy vagy vállalat szellemi tulajdona.
+	A számítógépes programokat szerzői jogi törvény védi, amely kimondja, hogy az ilyen művek engedély nélküli másolása
+  	törvénybe ütköző cselekedet.
+    (Magyarországon a szerzői jogokat az 1999. évi LXXVI. törvény szabályozza)
+
+A jogszabályok elérhetőek a www.njt.hu oldalon.
 
 
 7\. Igényelt üzleti folyamatok modellje
@@ -81,3 +96,7 @@ Main menu: A fő menü, amely a weboldal indulásakor megjelenik.
 User Interface: A felhasználó által használt és látott felhasználói felület.
 
 Performance: A szoftver által adott teljesitmény
+
+Szerzői jog: A szerzői jog a szellemi alkotások jogának fő részterülete az iparjogvédelem mellett.
+		A szerzői jog az irodalmi, tudományos és művészeti művek (a továbbiakban együtt: szerzői alkotások) oltalmára hivatott.
+		Emellett bizonyos szomszédos jogok oltalmát is biztosítja.

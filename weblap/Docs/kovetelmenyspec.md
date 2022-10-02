@@ -14,7 +14,7 @@ Lippai Attila
 Kóródi Marcell
 
 
-3\. Jelenleg helyzet
+2\. Jelenleg helyzet
 =====================
 Az ügyfél szeretné felmérni az alkalmazottainak az egyes képességeit. A legolcsóbb és legegyszerűbb mód erre az általunk készített weboldal amelyet bármikor, bárhonnan és teljesen ingyenesen igénybe
 vehet az ügyfél e célból. A különböző tesztek az alkalmazottak különböző képességeinek a felmérésére alkalmasak amelyeknek az elvégzése után könnyen össze lehet hasonlítani az átlag ember képességeivel
@@ -34,13 +34,13 @@ Szükség lesz még egy jól működő, megbízható, gyors adatbázisra is amib
 A kezelő felületnek jól átláthatónak, letisztultnak és esztétikusnak kell lennie minden eszközön és minden böngészőben. A dashboardnak esztétikusnak, átláthatónak és letisztultnak kell lennie, illetve ki kell listáznia felhasználó felhasználónevét, a teszt nevét, az elért pontszámát és a tesztnek az emberek által elért átlagos pontszámát viszonyítási alapként.
 
 
-4\. Nemfunkcionális követelmények
+5\. Nemfunkcionális követelmények
 ==============================
 A weboldalnak működő képesnek kell lennie minden weboldalon és minden eszközön. A tesztekből kinyerhető adatoknak nem szabad semmilyen harmadikfélnek a kezébe jutnia.
 A weboldalnak alkalmasnak kell lennie a folyamatos bővíthetőségre(új játékok létrehozása, funkciók bővítése). Lehetőleg bugmentesnek kell lennie minden tesztnek, illetve semmilyen esélyt nem szabad meghagyni az esetleges csalásokra.
 
 
-5\. Rendszerre vonatkozó törvények, szabványok, ajánlások
+6\. Rendszerre vonatkozó törvények, szabványok, ajánlások
 ======================
    
 A weboldalnak meg kell felelnie minden hatályos jogszabálynak, szabványnak és ajánlásnak. Az egyik legfontosabb ilyen irányelv az adatvédelem, aminek meg kell felelnie az éppen hatájos GDPR jogszabálynak. Hasonlóan fontos terület a személyes adatok gyűjtésére vonatkozó jogszabályok. Ezen a területen a programnak meg kell felelnie a”2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról” -ban leírtaknak. Mindazonáltal a programnak meg kell felelnie a fogyatékkal élők érdekében hozott hozzáférhetőségi szabályozásoknak.

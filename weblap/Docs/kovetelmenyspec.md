@@ -82,7 +82,7 @@ A jogszabályok elérhetőek a www.njt.hu oldalon.
 9\. Képernyőkép
 ===============
 
-<image src="kepernyoterv.jpg">
+<image src="kepernyoterv.JPG">
 
 10\. Usecase
 ===============

@@ -79,6 +79,15 @@ A jogszabályok elérhetőek a www.njt.hu oldalon.
 | K5 | Typing Test | Egy egyszerű teszt a gépelési sebesség megmérésére(word per minute). |
 | K6 | Database | Adatbázis az egyének teszteken elért eredményeinek a tárolására. |
 
+9\. Képernyőkép
+===============
+
+<image src="képernyőterv.jpg">
+
+10\. Usecase
+===============
+
+<image src="usecase.jpg">
 
 9\.  Fogalomtár
 ===============

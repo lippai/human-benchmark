@@ -62,7 +62,7 @@ Rendszerterv:
 
 #Funkcionális terv:
 
-	A cél a tesztek kitöltésének játékos hangulat megteremtése. A játékok letisztultak, érthetőek és könnyen játszhatóak legyenek.
+	A cél a tesztek kitöltésének játékos hangulatának megteremtése. A játékok letisztultak, érthetőek és könnyen játszhatóak legyenek.
 	A felhasználót arra bátorítani, hogy a játékot többször is kipróbálja jobb eredmény elérésének reményében.
 
 	Rendszerszereplők:
@@ -81,18 +81,11 @@ Rendszerterv:
 
 		-játék kiválasztása
 
-	Képernyők tervek:
-
-	(kép a menüről)
-	(kép az egyik játékról)
-
 ---------------------------------
 
 #Fizikai környezet:
 
 	-Az alkalmazás web platformra készül
-
-	-Rendelkezik tűzfallal és minden hálózati porton elérhető.
 
 	-Megvásárolt komponensek nincsenek.
 

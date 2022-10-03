@@ -25,18 +25,6 @@ Rendszerterv:
 
 ---------------------------------
 
-#Üzleti folyamatok modellje:
-
-	Üzleti szereplők: felhasználó, fejlesztők
-	Üzleti folyamatok:
-		-gombok használata (újrakezdés, adatbevitel, pontszám mentése)
-		-megfelelő adatok bevitele
-		-eredmény lekérése
-		-tesztek közötti váltás
-		-hibakezelés
-	(üzleti ábra)
-
----------------------------------
 
 #Követelmények:
 

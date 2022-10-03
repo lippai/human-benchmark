@@ -82,14 +82,14 @@ A jogszabályok elérhetőek a www.njt.hu oldalon.
 9\. Képernyőkép
 ===============
 
-<image src="képernyőterv.jpg">
+<image src="kepernyoterv.jpg">
 
 10\. Usecase
 ===============
 
 <image src="usecase.jpg">
 
-9\.  Fogalomtár
+11\.  Fogalomtár
 ===============
 
 Cross-Platform: A platformfüggetlenség vagy többplatformosság, illetve multi-platform fogalma olyan számítógépes programokra, operációs rendszerekre, programozási nyelvekre vagy más számítógépes szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek működni.

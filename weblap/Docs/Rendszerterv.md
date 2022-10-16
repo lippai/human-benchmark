@@ -14,6 +14,7 @@ Rendszerterv:
 ---------------------------------
 
 #Projekt terv:
+
 	Projektmunkások és felelősségek:
 		Backend munkálatok:
 			Lippai Attila, Szabó László, Kóródi Marcell
@@ -45,6 +46,12 @@ Rendszerterv:
 
 	Célzás teszt:
 		-a teszt csak a kijelölt helyen lévő kattintást fogadhatja el, annak az idejét rögzíteni.
+		
+	Verbális memória teszt:
+		- a tesztnek az eddig meg nem jelenített szavakat "új" szóként, a megjelenített szavakat "látott" szavakként kell elkülönítenie.
+
+	Vizuális memória teszt:
+		- a teszt csak a felvillant négyzeteket fogadhatja el, a nem felvillant négyzetek kijelölése helytelen.
 
 ---------------------------------
 
@@ -100,6 +107,24 @@ Implementációs terv:
 		Ha a helyes számokat adta meg, akkor a következő szintre lépünk és a számsor növekszik plusz egy számmal,
 		a bekérendő szám megjelenítésének az idejét, növeljük egy kis mértékkel.
 		Ha nem a megfelelő számokat adtuk meg, akkor a jelenlegi szint kerül be eredménynek.
+		
+	Célzás teszt:
+
+		- A célzás teszten, egy előre meghatározott számú célkeresztek jelennek meg egyessével. A cél ezekre minnél hamarabb rákattintani.
+		A sikeres kattintás esetén a célkereszt eltűnik és egy újabb célkereszt jelenik meg véletlenszerű helyen a képernyőn. Ameddig nem kattintunk rá a 		  élkeresztre, addig az nem tűnik el. Ha az összes célkereszt elfogyott, akkor a célkereszt megjelenése és a kattintás közötti időknek, az átlagát kapja 	         meg a játékos.
+		
+	Gépelés teszt:
+
+		- A gépelés gyorsaság teszten, egy véletlenszerű hosszúságú szöveg jelenik meg, amit a lehető leghamarabb be kell gépelni. Egy stopper indul el, amint 			az első karaktert begépeltük. A szövegben nem szerepelhet helyesírási hiba, csak a megfelelő karaktereket fogja beszámítiani. A szövegben vissza lehet 			menni és kijavítani a hibásan begépelt karaktereket. A szöveg végén eredményként egy "words per minute" átlagot kapunk vissza, ami az átlag begépelt 		      karaktereket jelzi percenként.
+		
+	Vizuális memória teszt:
+
+		- A vizuális memória tesztnél egy előre meghatározott számú négyzetekből felvillan véletlenszerűen pár négyzet egy másodpercre.
+		Utána az összes felvillant négyzetnek a helyét kell kijelölni. A rossz négyzet kijelölésért hiba pont jár, 3 hiba pont után vége a játéknak. Csak akkor 		léphetünk a következő szintre, ha az összes megfelelő négyzetet kijelöltük. A szintek előrehaladásával a négyzetek száma egyre több lesz. A játék végén 		a szint száma fog eredményként eltárolódni.
+		
+	Verbális memória teszt:
+
+		- A verbális memória tesztnél egy véletlenszerű szó fog megjelenni, amiről el kell dönteni hogy láttuk-e már vagy sem. Ha sikerül eltalálni egy szóról 			hogy új-e vagy sem, akkor minden egyes szó után egy pontot kapunk. Ha rosszul döntöttünk akkor egy életet elveszítünk a 3-ból. Ha elfogyott az összes 		       életünk, akkor a játék végén a helyesen döntött szavak számát fogjuk eredményként kapni.
 
 
 

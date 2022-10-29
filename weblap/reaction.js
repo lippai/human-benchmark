@@ -6,8 +6,8 @@ const scoreElements = document.querySelectorAll(".score");
 const scoreHistory = [];
 
 
-const MINIMUM_MS_TILL_CHANGE = 2000;
-const MAXIMUM_MS_TILL_CHANGE = 5000;
+const MINIMUM_MS_TILL_CHANGE = 800;
+const MAXIMUM_MS_TILL_CHANGE = 1400;
 
 let msSinceEpochOnTimeout = 0;
 let waitingForClick = false;

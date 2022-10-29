@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Number memory</title>
+    <link rel="stylesheet" href="number_memory.css">
+
+</head>
+<body>
+
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand"><i class="bi bi-lightning-fill"></i>HUMAN BENCHMARK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard.html">Dashboard</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign_up.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Login</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+
+    <div id="app">
+        <div class="click-area">
+            <div class="container">
+                <div class="level-text"></div>
+                <h1 class="title">Number Memory</h1>
+                
+                <div class="display-text">The average person can remember 7 numbers at once. Can you do more?</div>
+                <div class="display-text2"></div>
+                <div class="inputArea">
+                    <input id="input" type="text">
+                </div>
+                
+                <div id="st">
+                    <button id="start" type="button" style="background-color: yellow; border: none; font-size: larger; border-radius: 10px;">Start</button>
+                </div>
+
+                <div id="submit">
+                    <button id="submitBtn" type="button" style="visibility: hidden; background-color: yellow; border: none; font-size: larger; border-radius: 10px;">Submit</button>
+                </div>
+
+                <div id="next">
+                    <button id="nextBtn" type="button" style="visibility: hidden; background-color: yellow; border: none; font-size: larger; border-radius: 10px;">Next</button>
+                </div>
+                <div id="restart">
+                    <button id="restartBtn" type="button" style="visibility: hidden; background-color: yellow; border: none; font-size: larger; border-radius: 10px;">Restart</button>
+                    <button id="saveBtn" type="button" style="visibility: hidden; background-color: yellow; border: none; font-size: larger; border-radius: 10px;">Save score</button>
+                </div>
+                
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="number_memory.js"></script>
+</body>
+</html>

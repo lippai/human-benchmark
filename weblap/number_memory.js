@@ -8,8 +8,6 @@ const lvText = document.querySelector(".level-text");
 const textinp = document.getElementById("input");
 const submit = document.getElementById("submitBtn");
 const next = document.getElementById("nextBtn");
-const restart = document.getElementById("restartBtn");
-const save = document.getElementById("saveBtn");
 
 
 
@@ -25,11 +23,7 @@ start.addEventListener("click", () => {
     displayText.textContent = "";
     displayTitle.textContent = "";
     start.style.visibility = "hidden";
-   // textinp.style.visibility = "visible";
-   // submit.style.visibility = "visible";
-   // lvText.textContent = "Level " + level;
-    
-    
+   
     play();
 })
 
@@ -54,26 +48,11 @@ next.addEventListener("click", () => {
     play();
 })
 
-restart.addEventListener("click", () => {
-    seconds = 2.0;
-    level = 1;
-    textinp.value = "";
-    clickArea.style.backgroundColor = "rgb(13, 186, 230)";
-    restart.style.visibility = "hidden";
-    save.style.visibility = "hidden";
-    para.innerHTML="";
-    play();
-
-})
-
-
 
 async function play() {
 
 
     lvText.style.visibility = "hidden";
-    //submit.style.visibility = "hidden";
-    //textinp.style.visibility = "hidden";
     displayText2.style.visibility = "hidden";
     next.style.visibility = "hidden";
 
@@ -137,9 +116,6 @@ function incorrectAnswer() {
 
     displayText.textContent = "Number: " + number;
     displayText2.textContent = "Your answer: " + answer;
-
-    restart.style.visibility = "visible";
-    save.style.visibility = "visible";
 
     clickArea.style.backgroundColor = "#c11a2a";
 

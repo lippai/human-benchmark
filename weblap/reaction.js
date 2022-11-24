@@ -30,8 +30,9 @@ function play() {
         
         clickArea.style.backgroundColor = "#0099FF";
         displayText.style.color = "white";
-        displayText.style.left = "550px";
-        displayText.style.top = "315px";
+        displayText.style.top = "50%";
+        displayText.style.left = "50%";
+        displayText.style.transform = "translateX(-50%) translateY(-50%)";
         displayText.textContent = "Your best score is " + best + " ms";
 
     }
@@ -52,8 +53,9 @@ function play() {
                             displayText.textContent = "You clicked too soon!";
                             displayText.style.position = "absolute";
                             displayText.style.color = "white";
-                            displayText.style.left = "550px";
-                            displayText.style.top = "315px";
+                            displayText.style.top = "50%";
+                            displayText.style.left = "50%";
+                            displayText.style.transform = "translateX(-50%) translateY(-50%)";
                             clickArea.style.backgroundColor = "#0099FF";
                             canClick = false;
                         
@@ -112,8 +114,9 @@ clickArea.addEventListener("click", () => {
                 
             displayText.style.color = "white";
             displayText.style.position = "absolute";
-            displayText.style.left = "450px";
-            displayText.style.top = "315px";
+            displayText.style.top = "50%";
+            displayText.style.left = "50%";
+            displayText.style.transform = "translateX(-50%) translateY(-50%)";
             
             clickArea.style.backgroundColor = "#0099FF";
             addScore(score);

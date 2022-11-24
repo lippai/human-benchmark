@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
   <body>
-    
-    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+  <?php include "session.php" ?>
+  <nav class="navbar sticky-top navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand"><i class="bi bi-lightning-fill pulse"></i>HUMAN BENCHMARK</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
                 <a class="nav-link active" aria-current="page" href="http://localhost/HUMAN-BENCHMARK-MAIN/weblap/index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://localhost/HUMAN-BENCHMARK-MAIN/weblap/dashboard.html">Dashboard</a>
+                <a class="nav-link" href="dashboard.php">Dashboard</a>
               </li>
             </ul>
             <ul class="navbar-nav">
@@ -36,23 +36,35 @@
           </div>
         </div>
     </nav>
-    
-    <form action="login.php" method="POST">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center background mb-5" style="height: 10rem;">
+            <h1 style="font-size: 2rem;" class="mt-5">
+                <?php
+                    $conn = mysqli_connect("localhost", "root","","weblap") or die('Unable To connect');
+
+                    //$sql = "SELECT email, aim_score, chimp_score, reaction_score, number_score FROM MyGuests";
+                    //$result = $conn->query($sql);
+                    if(isset($_SESSION["name"])){
+                      $result = mysqli_query($conn,"SELECT * FROM reg WHERE email='" . $_SESSION["name"] ."'");
+                      $row  = mysqli_fetch_array($result);
+                      if ($result->num_rows > 0) {
+                        // output data of each row
+                          echo "Email: " . $row["email"]. " - Aim score: " . $row["aim_score"]. " - Chimp score: " . $row["chimp_score"]." - Reaction score: " . $row["reaction_score"]."ms"." - Number score: " . $row["number_score"]."<br>";
+                      } else {
+                        echo "0 results";
+                      }
+                    }else{
+                        echo "Nem vagy bejelentkezve!";
+                    }
+                  ?>                  
+                </h1>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name="jelszo">
-        </div>
-        <button type="submit" value="Elküld" class="btn btn-primary">Login</button>
-      </form>
-      <br>
-      <form action="logout.php" method="POST">
-        <button type="submit" value="Elküld" class="btn btn-primary">Logout</button>
-      </form>
+    </div>
+
 
     <footer class="container-fluid bg-light mt-5 border-top py-3">
         <p class="text-muted">Copyright 2022-2022 Human Benchmark</p>

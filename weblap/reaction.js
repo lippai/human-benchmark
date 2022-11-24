@@ -1,10 +1,13 @@
 const clickArea = document.querySelector(".click-area");
 const displayText = document.querySelector(".display-text");
+const displayHtml = document.querySelector(".display-html");
 const displayTitle = document.querySelector(".title");
 const scoreElements = document.querySelectorAll(".score");
+const board = document.querySelector('#board')
 
 const scoreHistory = [];
 
+displayHtml.innerHTML = "";
 
 const MINIMUM_MS_TILL_CHANGE = 800;
 const MAXIMUM_MS_TILL_CHANGE = 1400;
@@ -73,6 +76,8 @@ function play() {
 
 function addScore(score) {
     // add score to array at index 0
+    
+
     scoreHistory.unshift(score);
 
 
@@ -98,6 +103,13 @@ clickArea.addEventListener("click", () => {
     
             waitingForClick = false;
             displayText.textContent = 'Your time was ' + score + ' ms! Click to play again.';
+            displayHtml.innerHTML = `
+                <h1>
+                <form action="feltolt.php" method="POST">
+                    <input type="hidden" id="btnClickedValue" name="reaction" value="${score}" />
+                    <button type="submit" value="Elküld" class="btn btn-primary">Submit</button>
+                </form></h1>`
+                
             displayText.style.color = "white";
             displayText.style.position = "absolute";
             displayText.style.left = "450px";

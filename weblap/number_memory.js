@@ -61,6 +61,7 @@ restart.addEventListener("click", () => {
     clickArea.style.backgroundColor = "rgb(13, 186, 230)";
     restart.style.visibility = "hidden";
     save.style.visibility = "hidden";
+    para.innerHTML="";
     play();
 
 })
@@ -142,7 +143,24 @@ function incorrectAnswer() {
 
     clickArea.style.backgroundColor = "#c11a2a";
 
+    addElement();
+
     console.log("Incorrect answer");
 
 
 }
+
+function addElement() {
+
+    // create a new div element
+    const para = document.createElement("p");
+  
+    // and give it some content
+    para.innerHTML =`<form action="feltolt.php" method="POST">
+    <input type="hidden" id="btnClickedValue" name="number" value="${level-1}" />
+    <button type="submit" value="Elküld" class="btn btn-primary">Submit</button>
+    </form>`;
+  
+    // Append to another element:
+    document.getElementById("text").appendChild(para);
+  }

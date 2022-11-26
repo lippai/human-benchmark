@@ -1,52 +1,18 @@
-* {
-  box-sizing: border-box;
+#timetext{
+  display: block;
+  
 }
 
-body {
+.bars{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  background-color: rgb(255, 255, 255);
-}
-
-body, .quote-input {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.container {
-  background-color: rgb(155, 212, 255);
-  padding: 1rem;
-  border-radius: .5rem;
-  width: 700px;
-  max-width: 90%;
-}
-
-.timer {
-  position: absolute;
-  top:2rem;
-  font-size: 3rem;
-  color: rgb(0, 153, 255);
-  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  text-align: left;
 }
 
 .quote-display {
   margin: 1em;
   
-}
-
-.quote-input {
-  background-color: transparent;
-  border: 2px solid #A1922E;
-  outline: none;
-  width: 100%;
-  height: 8rem;
-  margin: auto;
-  resize: none;
-  padding: .5rem 1rem;
-  font-size: 1.5rem;
-  border-radius: .5rem;
 }
 
 .quote-input:focus {
@@ -61,3 +27,36 @@ body, .quote-input {
   color: red;
   text-decoration: underline;
 }   
+
+.input-field{
+  font-size: 22px;
+  text-align: justify;
+  word-break: break-all;
+  height: 300px;
+}
+
+.inputbox{
+  
+  padding: 35px;
+}
+
+.innertext{
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#score{
+  font-size: 12px;
+  height: auto;
+  padding: 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: gold;
+  font-size: large;
+  display: none;
+}

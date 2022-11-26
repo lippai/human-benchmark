@@ -1,63 +1,91 @@
-const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random'
-const quoteDisplayElement = document.getElementById('quoteDisplay')
-const quoteInputElement = document.getElementById('quoteInput')
-const timerElement = document.getElementById('timer')
+const typingText = document.querySelector(".innertext");
+const inpField = document.querySelector(".input-field");
+const timeTag = document.querySelector(".timer");
+const timeText = document.getElementById("timetext");
+const wpmTag = document.getElementById("wpm");
+const gameMessage = document.getElementById("score")
 
-quoteInputElement.addEventListener('input', () => {
-  const arrayQuote = quoteDisplayElement.querySelectorAll('span')
-  const arrayValue = quoteInputElement.value.split('')
-
-  let correct = true
-  arrayQuote.forEach((characterSpan, index) => {
-    const character = arrayValue[index]
-    if (character == null) {
-      characterSpan.classList.remove('correct')
-      characterSpan.classList.remove('incorrect')
-      correct = false
-    } else if (character === characterSpan.innerText) {
-      characterSpan.classList.add('correct')
-      characterSpan.classList.remove('incorrect')
-    } else {
-      characterSpan.classList.remove('correct')
-      characterSpan.classList.add('incorrect')
-      correct = false
-    }
-  })
-
-  if (correct) renderNewQuote()
-})
-
-function getRandomQuote() {
-  return fetch(RANDOM_QUOTE_API_URL)
-    .then(response => response.json())
-    .then(data => data.content)
+function randomParag(){
+  let rand = Math.floor(Math.random() * paragrapsh.length);
+  paragrapsh[rand].split("").forEach(span => {
+    let spanTag = `<span>${span}</span>`;
+    typingText.innerHTML += spanTag;
+  });
+  document.addEventListener("keydown", () => inpField.focus());
 }
 
-async function renderNewQuote() {
-  const quote = await getRandomQuote()
-  quoteDisplayElement.innerHTML = ''
-  quote.split('').forEach(character => {
-    const characterSpan = document.createElement('span')
-    characterSpan.innerText = character
-    quoteDisplayElement.appendChild(characterSpan)
-  })
-  quoteInputElement.value = null
-  onkeydown(startTimer())
+let charIndex = 0;
+let correct = 0;
+let mistake = 0;
+let wpm = 0;
+let score;
+
+function initTyping(){
+
+  const characters = typingText.querySelectorAll("span");
+  let typedChar = inpField.value.split("")[charIndex];
+  if(charIndex < characters.length - 1 && timeLeft > 0){
+    if(!isTyping){
+      timer = setInterval(initTimer, 1000);
+      isTyping = true;
+    }
+    if (typedChar == null){
+      charIndex--;
+      characters[charIndex].classList.remove("incorrect", "correct");
+    } else{
+      if (characters[charIndex].innerText === typedChar) {
+        characters[charIndex].classList.add("correct");
+        correct++;
+        console.log("correct");
+      }
+      else{
+        mistake++;
+        console.log(mistake);
+        characters[charIndex].classList.add("incorrect");
+        console.log("incorrect");
+      }
+      charIndex++;
+    }
+    wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
+    wpm = Math.round((((charIndex - mistake) / 5) / (maxTime - timeLeft))*60);
+    wpmTag.innerText = wpm;
+  } else{
+    
+    clearInterval(timer);
+    score = wpm;
+    console.log(score);
+    gameMessage.style.display = "block";
+  }
   
 }
 
+randomParag();
+inpField.addEventListener("input", initTyping);
 
-let startTime
-function startTimer() {
-  timerElement.innerText = 0
-  startTime = new Date()
-  setInterval(() => {
-    timer.innerText = getTimerTime()
-  }, 1000)
+var isTyping = false;
+let timer,
+maxTime = 30,
+timeLeft = maxTime;
+
+
+
+function initTimer(){
+  if(timeLeft > 0){
+    timeLeft--;
+    timeText.innerText = timeLeft;
+  } else{
+    clearInterval(timer);
+    gameMessage.style.display = "block";
+  }
 }
 
-function getTimerTime() {
-  return Math.floor((new Date() - startTime) / 1000)
-}
 
-renderNewQuote()
+
+
+
+
+
+
+
+
+

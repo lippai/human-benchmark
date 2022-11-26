@@ -17,9 +17,9 @@ if(isset($_POST['btnClickedValue'])){
     $reaction_score = $_POST['reaction'];
     $sql = "UPDATE reg SET reaction_score = $reaction_score WHERE email='". $_SESSION["name"]."'";
     $query = mysqli_query($conn,$sql);
-}elseif(isset($_POST['number'])){
-    $number_score = $_POST['number'];
-    $sql = "UPDATE reg SET number_score = $number_score WHERE email='". $_SESSION["name"]."'";
+}elseif(isset($_POST['typing'])){
+    $typing_score = $_POST['typing'];
+    $sql = "UPDATE reg SET typing_score = $typing_score WHERE email='". $_SESSION["name"]."'";
     $query = mysqli_query($conn,$sql);
 }
 

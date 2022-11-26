@@ -12,7 +12,7 @@ function randomParag(){
     typingText.innerHTML += spanTag;
   });
   document.addEventListener("keydown", () => inpField.focus());
-}
+} 
 
 let charIndex = 0;
 let correct = 0;
@@ -55,6 +55,7 @@ function initTyping(){
     score = wpm;
     console.log(score);
     gameMessage.style.display = "block";
+    //document.getElementById("typing").value = "5";
   }
   
 }
@@ -76,6 +77,7 @@ function initTimer(){
   } else{
     clearInterval(timer);
     gameMessage.style.display = "block";
+    document.getElementById("typing").value = wpm.toString();
   }
 }
 

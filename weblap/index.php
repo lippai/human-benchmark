@@ -61,7 +61,7 @@
               </a>
           </div>
           <div class="col">
-              <a class="card text-decoration-none text-reset bg-light" style="width: 18rem; height: 16rem;" href="typing_test.html">
+              <a class="card text-decoration-none text-reset bg-light" style="width: 18rem; height: 16rem;" href="typing_test.php">
                   <div class="card-body text-center">
                     <h5 class="card-title"><i class="bi bi-keyboard-fill" style="font-size: 4rem;"></i></h5>
                     <h3 class="card-subtitle my-3">Typing</h6>
@@ -101,11 +101,11 @@
               </a>
           </div>
           <div class="col">
-              <a class="card text-decoration-none text-reset bg-light" style="width: 18rem; height: 16rem;" href="elso_game.html">
+              <a class="card text-decoration-none text-reset bg-light" style="width: 18rem; height: 16rem;" href="versek/remenyhez.html">
                   <div class="card-body text-center">
-                    <h5 class="card-title"><i class="bi bi-lightning-fill" style="font-size: 4rem;"></i></h5>
-                    <h3 class="card-subtitle my-3">Reaction Time</h6>
-                    <p class="card-text" style="font-size: 1.2rem;">Test your visual reflexes.</p>
+                    <h5 class="card-title"><i class="bi bi-card-heading" style="font-size: 4rem;"></i></h5>
+                    <h3 class="card-subtitle my-3">Poems</h6>
+                    <p class="card-text" style="font-size: 1.2rem;">Yes.</p>
                   </div>
               </a>
           </div>
